@@ -89,7 +89,7 @@ Lista definicji::
 Obraz z alternatywnym tekstem i podpisem
 -----------------------------------------
 
-.. figure:: przyklad.png
+.. figure:: obraz.png
    :alt: Przykładowy obraz
 
    Podpis opisujący obraz umieszczony poniżej grafiki.
