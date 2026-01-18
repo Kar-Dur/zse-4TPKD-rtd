@@ -1,10 +1,8 @@
-==============================
-Moja Dokumentacja
-==============================
+Spis treści
+-----------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Spis treści
+   :maxdepth: 1
 
    skladnia
    autor
