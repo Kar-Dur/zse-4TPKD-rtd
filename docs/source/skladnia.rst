@@ -1,113 +1,125 @@
+===============================
+Elementy dokumentacji RtD
+===============================
+
+Poniższy dokument prezentuje podstawowe elementy składni
+języka **reStructuredText**, używanego w dokumentacji
+tworzonej na platformie **Read the Docs**.
+
 Nagłówki tekstowe (poziomy 1–4)
 ===============================
 
-Nagłówek poziom 1
-=================
+Przykład nagłówka poziomu pierwszego
+===================================
 
-Nagłówek poziom 2
------------------
+Przykład nagłówka poziomu drugiego
+----------------------------------
 
-Nagłówek poziom 3
-~~~~~~~~~~~~~~~~~
+Przykład nagłówka poziomu trzeciego
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nagłówek poziom 4
-^^^^^^^^^^^^^^^^^
+Przykład nagłówka poziomu czwartego
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Akapit tekstowy
-===============
+Akapit tekstowy (treść)
+======================
 
-To jest przykładowy akapit tekstowy.
-Może składać się z kilku zdań i służy do opisu treści dokumentu.
+Akapit tekstowy służy do opisywania funkcjonalności projektu,
+instrukcji obsługi lub innych informacji.
+Może zawierać wiele zdań zapisanych w kilku liniach.
 
 
 Akapit informacyjny (Note, Tip)
 ===============================
 
 .. note::
-   To jest przykładowy komunikat typu NOTE.
+   Ten blok służy do przekazywania ważnych informacji
+   dotyczących dokumentacji.
 
 .. tip::
-   To jest przykładowy komunikat typu TIP.
+   W tym miejscu można umieścić praktyczną wskazówkę
+   dla użytkownika.
 
 
-Fragmenty kodu
-==============
+Fragment kodu (liniowy, blokowy)
+================================
 
 Kod liniowy
 -----------
 
-Użyj polecenia ``pip install rtd`` aby rozpocząć.
+Polecenie ``git pull`` umożliwia pobranie najnowszych zmian
+z repozytorium.
 
 Kod blokowy
 -----------
 
 .. code-block:: python
 
-   def hello():
-       print("Hello, World!")
+   for i in range(3):
+       print("Read the Docs")
 
 
-Odnośniki
-=========
+Odnośnik (lokalny RtD, zewnętrzny)
+=================================
 
-Link zewnętrzny
----------------
+Odnośnik zewnętrzny
+------------------
 
-`Example <https://example.com>`_
+`Oficjalna strona Read the Docs <https://readthedocs.org>`_
 
-Link nazwany
-------------
+Odnośnik lokalny (inna podstrona)
+--------------------------------
 
-Więcej informacji znajdziesz `tutaj <https://example.com>`_.
-
-Link lokalny (do innych podstron dokumentacji)
-----------------------------------------------
-
-Zobacz stronę :doc:`autor`.
+Więcej informacji znajduje się na stronie :doc:`autor`.
 
 
-Listy
-=====
+Listy (numerowana, wypunktowana, definicji)
+===========================================
 
 Lista wypunktowana
 ------------------
 
-- Element 1
-- Element 2
-  - Pod-element
+- dokumentacja
+- repozytorium
+- konfiguracja
 
 Lista numerowana
 ----------------
 
-1. Pierwszy element
-2. Drugi element
-3. Trzeci element
+1. Utworzenie repozytorium
+2. Dodanie plików `.rst`
+3. Publikacja na Read the Docs
 
 Lista definicji
 ---------------
 
-Pojęcie
-   Wyjaśnienie pojęcia wpisane poniżej.
+Sphinx
+   Narzędzie do generowania dokumentacji.
+
+Read the Docs
+   Platforma hostująca dokumentacje projektów.
 
 
-Obraz z alternatywnym tekstem i podpisem
-=======================================
+Obraz (z alternatywnym tekstem oraz podpisem)
+=============================================
 
 .. figure:: ./obraz.jpg
-   :alt: Przykładowy obraz
+   :alt: Przykładowa grafika
    :align: center
 
-   Podpis opisujący obraz umieszczony poniżej grafiki.
+   Przykładowy obraz użyty w dokumentacji.
 
 
 Tabela
 ======
 
-+------------+------------+
-| Kolumna A  | Kolumna B  |
-+============+============+
-| A1         | B1         |
-+------------+------------+
-| A2         | B2         |
-+------------+------------+
++----------------+----------------------------+
+| Element        | Zastosowanie               |
++================+============================+
+| Nagłówek       | Tytuł sekcji               |
++----------------+----------------------------+
+| Lista          | Grupowanie informacji      |
++----------------+----------------------------+
+| Kod            | Prezentacja przykładu      |
++----------------+----------------------------+
