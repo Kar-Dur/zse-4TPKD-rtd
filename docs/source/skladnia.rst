@@ -94,7 +94,7 @@ Pojęcie
 Obraz z alternatywnym tekstem i podpisem
 =======================================
 
-.. figure:: _static/obraz.png
+.. figure:: ./obraz.png
    :alt: Przykładowy obraz
    :align: center
 
