@@ -1,43 +1,46 @@
 Nagłówki tekstowe (poziomy 1–4)
--------------------------------
+===============================
 
-Nagłówek 1
-==========
+Nagłówek poziom 1
+=================
 
-Nagłówek 2
-----------
+Nagłówek poziom 2
+-----------------
 
-Nagłówek 3
-~~~~~~~~~~
+Nagłówek poziom 3
+~~~~~~~~~~~~~~~~~
 
-Nagłówek 4
-^^^^^^^^^^
+Nagłówek poziom 4
+^^^^^^^^^^^^^^^^^
 
-
-
-Akapit tekstowy
-----------------
 
 Akapit tekstowy
+===============
+
+To jest przykładowy akapit tekstowy.
+Może składać się z kilku zdań i służy do opisu treści dokumentu.
+
 
 Akapit informacyjny (Note, Tip)
---------------------------------
+===============================
 
 .. note::
-   Note
+   To jest przykładowy komunikat typu NOTE.
 
 .. tip::
-   Tip
-
+   To jest przykładowy komunikat typu TIP.
 
 
 Fragmenty kodu
---------------
+==============
 
-Inline code
-``użyj polecenia ``pip install rtd`` aby rozpocząć``
+Kod liniowy
+-----------
 
-Kod blokowy:
+Użyj polecenia ``pip install rtd`` aby rozpocząć.
+
+Kod blokowy
+-----------
 
 .. code-block:: python
 
@@ -45,59 +48,61 @@ Kod blokowy:
        print("Hello, World!")
 
 
-
 Odnośniki
----------
+=========
 
-Link zewnętrzny:
-https://example.com
+Link zewnętrzny
+---------------
 
-Link nazwany:
+`Example <https://example.com>`_
 
-Więcej informacji znajdziesz tutaj_.
+Link nazwany
+------------
 
-.. _tutaj: https://example.com
+Więcej informacji znajdziesz `tutaj <https://example.com>`_.
 
-Link lokalny (do innych podstron dokumentacji):
+Link lokalny (do innych podstron dokumentacji)
+----------------------------------------------
 
 Zobacz stronę :doc:`autor`.
 
 
-
 Listy
------
+=====
 
-Lista wypunktowana::
+Lista wypunktowana
+------------------
 
-   - Element 1
-   - Element 2
-     - Pod-element
+- Element 1
+- Element 2
+  - Pod-element
 
-Lista numerowana::
+Lista numerowana
+----------------
 
-   1. Pierwszy element
-   2. Drugi element
-   3. Trzeci element
+1. Pierwszy element
+2. Drugi element
+3. Trzeci element
 
-Lista definicji::
+Lista definicji
+---------------
 
-   Pojęcie
-      Wyjaśnienie pojęcia wpisane poniżej.
-
+Pojęcie
+   Wyjaśnienie pojęcia wpisane poniżej.
 
 
 Obraz z alternatywnym tekstem i podpisem
------------------------------------------
+=======================================
 
-.. figure:: obraz.png
+.. figure:: _static/obraz.png
    :alt: Przykładowy obraz
+   :align: center
 
    Podpis opisujący obraz umieszczony poniżej grafiki.
 
 
-
 Tabela
-------
+======
 
 +------------+------------+
 | Kolumna A  | Kolumna B  |
@@ -106,4 +111,3 @@ Tabela
 +------------+------------+
 | A2         | B2         |
 +------------+------------+
-
