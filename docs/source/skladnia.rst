@@ -1,45 +1,38 @@
-===============================
-Elementy dokumentacji RtD
-===============================
-
-Poniższy dokument prezentuje podstawowe elementy składni
-języka **reStructuredText**, używanego w dokumentacji
-tworzonej na platformie **Read the Docs**.
-
 Nagłówki tekstowe (poziomy 1–4)
 ===============================
 
-Przykład nagłówka poziomu pierwszego
-===================================
+Poziom pierwszy nagłówka
+=======================
 
-Przykład nagłówka poziomu drugiego
-----------------------------------
+Poziom drugi nagłówka
+--------------------
 
-Przykład nagłówka poziomu trzeciego
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Poziom trzeci nagłówka
+~~~~~~~~~~~~~~~~~~~~~
 
-Przykład nagłówka poziomu czwartego
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Poziom czwarty nagłówka
+^^^^^^^^^^^^^^^^^^^^^^
 
 
 Akapit tekstowy (treść)
 ======================
 
-Akapit tekstowy służy do opisywania funkcjonalności projektu,
-instrukcji obsługi lub innych informacji.
-Może zawierać wiele zdań zapisanych w kilku liniach.
+Akapit tekstowy jest podstawową formą przekazywania
+informacji w dokumentacji.
+Może opisywać działanie programu, sposób instalacji
+lub zasady użytkowania aplikacji.
 
 
 Akapit informacyjny (Note, Tip)
 ===============================
 
 .. note::
-   Ten blok służy do przekazywania ważnych informacji
-   dotyczących dokumentacji.
+   Dokumentacja powinna być czytelna
+   i zrozumiała dla użytkownika.
 
 .. tip::
-   W tym miejscu można umieścić praktyczną wskazówkę
-   dla użytkownika.
+   Warto stosować krótkie zdania
+   i przejrzystą strukturę.
 
 
 Fragment kodu (liniowy, blokowy)
@@ -48,30 +41,30 @@ Fragment kodu (liniowy, blokowy)
 Kod liniowy
 -----------
 
-Polecenie ``git pull`` umożliwia pobranie najnowszych zmian
-z repozytorium.
+Aby uruchomić serwer lokalny, użyj polecenia ``python app.py``.
 
 Kod blokowy
 -----------
 
-.. code-block:: python
+.. code-block:: bash
 
-   for i in range(3):
-       print("Read the Docs")
+   git add .
+   git commit -m "Pierwszy commit"
+   git push
 
 
-Odnośnik (lokalny RtD, zewnętrzny)
-=================================
+Odnośnik (lokalny RtD, zewnętrzny-inny serwis)
+=============================================
 
-Odnośnik zewnętrzny
-------------------
+Odnośnik do zewnętrznej strony
+------------------------------
 
-`Oficjalna strona Read the Docs <https://readthedocs.org>`_
+`Strona Python <https://www.python.org>`_
 
-Odnośnik lokalny (inna podstrona)
---------------------------------
+Odnośnik do innej części dokumentacji
+-------------------------------------
 
-Więcej informacji znajduje się na stronie :doc:`autor`.
+Szczegóły projektu opisano na stronie :doc:`autor`.
 
 
 Listy (numerowana, wypunktowana, definicji)
@@ -80,46 +73,46 @@ Listy (numerowana, wypunktowana, definicji)
 Lista wypunktowana
 ------------------
 
-- dokumentacja
-- repozytorium
-- konfiguracja
+- instalacja środowiska
+- konfiguracja projektu
+- uruchomienie aplikacji
 
 Lista numerowana
 ----------------
 
-1. Utworzenie repozytorium
-2. Dodanie plików `.rst`
-3. Publikacja na Read the Docs
+1. Pobierz repozytorium
+2. Otwórz projekt w edytorze
+3. Uruchom dokumentację
 
 Lista definicji
 ---------------
 
-Sphinx
-   Narzędzie do generowania dokumentacji.
+Repozytorium
+   Miejsce przechowywania kodu źródłowego.
 
-Read the Docs
-   Platforma hostująca dokumentacje projektów.
+Dokumentacja
+   Opis sposobu działania projektu.
 
 
 Obraz (z alternatywnym tekstem oraz podpisem)
 =============================================
 
 .. figure:: ./obraz.jpg
-   :alt: Przykładowa grafika
+   :alt: Schemat projektu
    :align: center
 
-   Przykładowy obraz użyty w dokumentacji.
+   Schemat przedstawiający strukturę projektu.
 
 
 Tabela
 ======
 
-+----------------+----------------------------+
-| Element        | Zastosowanie               |
-+================+============================+
-| Nagłówek       | Tytuł sekcji               |
-+----------------+----------------------------+
-| Lista          | Grupowanie informacji      |
-+----------------+----------------------------+
-| Kod            | Prezentacja przykładu      |
-+----------------+----------------------------+
++-------------------+----------------------+
+| Plik              | Przeznaczenie        |
++===================+======================+
+| index.rst         | Strona główna        |
++-------------------+----------------------+
+| skladnia.rst      | Opis składni         |
++-------------------+----------------------+
+| autor.rst         | Informacje o autorze |
++-------------------+----------------------+
