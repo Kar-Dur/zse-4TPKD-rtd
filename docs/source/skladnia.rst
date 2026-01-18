@@ -1,115 +1,108 @@
-=================================
-Składnia elementów dokumentu RtD
-=================================
+Nagłówki tekstowe (poziomy 1–4)
+-------------------------------
 
-Dokument przedstawia podstawową składnię języka
-**reStructuredText (reST)** wykorzystywanego na platformie
-**Read the Docs**.
+Nagłówek 1
+==========
 
-Nagłówki tekstowe
-=================
+Nagłówek 2
+----------
 
-Nagłówek poziom 1
-=================
+Nagłówek 3
+~~~~~~~~~~
 
-Nagłówek poziom 2
-================
+Nagłówek 4
+^^^^^^^^^^
 
-Nagłówek poziom 3
-----------------
 
-Nagłówek poziom 4
-~~~~~~~~~~~~~~~~
 
 Akapit tekstowy
-===============
+----------------
 
-To jest przykładowy akapit tekstowy.
-Służy do opisywania treści dokumentacji.
-Może składać się z kilku zdań.
+Akapit tekstowy
 
-Akapit informacyjny
-==================
+Akapit informacyjny (Note, Tip)
+--------------------------------
 
 .. note::
-   To jest akapit informacyjny typu NOTE.
+   Note
 
 .. tip::
-   To jest akapit informacyjny typu TIP.
+   Tip
 
-Fragment kodu
-=============
 
-Kod liniowy
------------
 
-Polecenie ``git status`` wyświetla aktualny stan repozytorium.
+Fragmenty kodu
+--------------
 
-Kod blokowy
------------
+Inline code
+``użyj polecenia ``pip install rtd`` aby rozpocząć``
+
+Kod blokowy:
 
 .. code-block:: python
 
    def hello():
-       print("Hello Read the Docs")
+       print("Hello, World!")
+
+
 
 Odnośniki
-=========
+---------
 
-Odnośnik lokalny (Read the Docs)
--------------------------------
+Link zewnętrzny:
+https://example.com
 
-:doc:`autor`
+Link nazwany:
 
-Odnośnik zewnętrzny
-------------------
+Więcej informacji znajdziesz tutaj_.
 
-`GitHub <https://github.com>`_
+.. _tutaj: https://example.com
+
+Link lokalny (do innych podstron dokumentacji):
+
+Zobacz stronę :doc:`autor`.
+
+
 
 Listy
-=====
+-----
 
-Lista wypunktowana
-------------------
+Lista wypunktowana::
 
-- element pierwszy
-- element drugi
-- element trzeci
+   - Element 1
+   - Element 2
+     - Pod-element
 
-Lista numerowana
-----------------
+Lista numerowana::
 
-1. punkt pierwszy
-2. punkt drugi
-3. punkt trzeci
+   1. Pierwszy element
+   2. Drugi element
+   3. Trzeci element
 
-Lista definicji
----------------
+Lista definicji::
 
-GitHub
-   Platforma do hostowania repozytoriów Git.
+   Pojęcie
+      Wyjaśnienie pojęcia wpisane poniżej.
 
-Read the Docs
-   Platforma do publikowania dokumentacji projektów.
 
-Obraz
-=====
 
-.. figure:: _static/obraz.png
+Obraz z alternatywnym tekstem i podpisem
+-----------------------------------------
+
+.. figure:: przyklad.png
    :alt: Przykładowy obraz
-   :align: center
 
-   Przykładowy podpis pod obrazem
+   Podpis opisujący obraz umieszczony poniżej grafiki.
+
+
 
 Tabela
-======
+------
 
-+-----------+---------------------------+
-| Element   | Opis                      |
-+===========+===========================+
-| Nagłówek  | Tytuł sekcji              |
-+-----------+---------------------------+
-| Akapit    | Treść dokumentu           |
-+-----------+---------------------------+
-| Kod       | Fragment programu         |
-+-----------+---------------------------+
++------------+------------+
+| Kolumna A  | Kolumna B  |
++============+============+
+| A1         | B1         |
++------------+------------+
+| A2         | B2         |
++------------+------------+
